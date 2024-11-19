@@ -1,0 +1,42 @@
+{
+  "name": "odin-landing-page",
+  "version": "1.0.0",
+  "description": "Second project from The Odin Project to create a landing page focusing on CSS styling and Flexbox.",
+  "main": "index.html",
+  "keywords": [
+    "html",
+    "css",
+    "flexbox",
+    "odin",
+    "project",
+    "landing",
+    "page",
+    "landing page"
+  ],
+  "author": "Heath Babb",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HeathBabb/odin-landing-page"
+  },
+  "homepage": "https://heathbabb.github.io/odin-landing-page",
+  "browser list": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "git": "git config --local core.hooksPath .githooks"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0"
+  }
+}
