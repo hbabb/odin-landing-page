@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="html, css, flexbox, odin, project, landing, page, landing page">
+    <meta author="Heath Babb">
+    <meta description="Odin Landing Page Project">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Odin Landing Page</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="/assets/images/Heath Babb.svg" alt="signature logo">
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#sign-up">Sign Up for The Odin Project</a>
+                </li>
+                <li>
+                    <a href="#projects">Current Projects</a>
+                </li>
+                <li>
+                    <a href="#contact-form">Contact Form</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+         <section class="hero">
+            <div class="hero-text">
+                <h1>
+                    The Odin Project: Landing Page CSS Project 
+                </h1>
+                <p>
+                    A web page created as part of The Odin Project's Foundations Course. This project demonstrates HTML and CSS skills, particularly focusing on layout and styling using Flexbox. Use the button below to sign up for The Odin Project!
+                </p>
+                <button id="sign-up">
+                    <a href="https://www.theodinproject.com/sign_up" target="_blank">Sign Up</a>
+                </button>
+            </div>
+
+            <div class="hero-image">
+                <figure>
+                    <img src="/assets//images/TheOdinProject-Logo.png" alt="The Odin Project Logo">
+                    <figcaption>
+                        The Odin Project Logo | curtesy of The Odin Project
+                    </figcaption>
+                </figure>
+            </div>
+         </section>
+
+        <!-- Projects Section -->
+         <section id="projects">
+            <h2>
+                Current Projects by Heath Babb 
+            </h2>
+            <p>
+                click an image below to view the project
+            </p>
+            <div class="projects">
+
+                <figure class="odin-recipes">
+                    <a href="https://hbabb.github.io/odin-recipes/index.html" target="_blank">
+                        <img src="/assets/images/OdinRecipes-Landing.png" alt="Odin Recipes Landing Page">
+                    </a>
+                    <figcaption>
+                        The Odin Projects: 1st foundational project focusing on HTML created by Heath Babb
+                    </figcaption>
+                </figure>
+
+                <figure class="motlow-creek-ministries">
+                    <a href="https://motlowcreekministries.com/" target="_blank">
+                        <img src="/assets/images/mcbc-landing.png" alt="Motlow Creek Ministries Landing Page">
+                    </a>
+                    <figcaption>
+                        Motlow Creek Ministries Landing Page created by Heath Babb in collaboration with Motlow Creek Baptist Church
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="quotes">
+
+            </div>
+         </section>
+
+         <!-- Contact Section -->
+          <section id="contact-form">
+            <div>
+
+            </div>
+            <div>
+                <h2>
+                    Contact Me
+                </h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+                    <input type="hidden" name="access_key" value="7cfdc704-8bb8-4eed-9afb-e84ab9225d97">
+                  
+                    <!-- Optional: Subject an be prefilled using type="hidden"
+                         or type="text" for normal user submitted input -->
+                    <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                  
+                    <!-- Optional: From Name you want to see in the email
+                         Default is "Notifications". you can overwrite here -->
+                    <input type="hidden" name="from_name" value="Odin Landing Page">
+                  
+                    <!-- Optional: Custom Redirection or Thank you Page
+                         Make sure you add full URL including https:// -->
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                  
+                    <!-- Optional: But Recommended: To Prevent SPAM Submission.
+                         Make sure its hidden by default -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                  
+                    <!-- Custom Form Data: Form data you wish to receive in email. -->
+                     <div>
+                       <label for="First Name">Name</label>
+                       <input type="text" name="Name" required>
+                     </div>
+
+                     <div>
+                       <label for="Last Name">Email</label>
+                       <input type="email" name="email" required>
+                     </div>
+                    
+                     <div>
+                       <label for="Email">Phone Number</label>
+                       <input type="text" name="Phone Number">
+                     </div>
+
+                     <div>
+                       <label for="Phone Number">Message</label>
+                       <textarea name="message" required></textarea>
+                     </div>
+                    
+                     <div>
+                        <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
+                        <div class="h-captcha" data-captcha="true"></div>
+                     </div>
+                    
+                    
+                  
+                    <button type="submit">Submit Form</button>
+                  
+                  </form>
+                  
+                  <!-- Required only if you are using hCaptcha or Advanced File Upload. -->
+                  <script src="https://web3forms.com/client/script.js" async defer></script>
+                  
+            </div>
+          </section>
+
+    </main>
+
+    <footer>
+        <p>
+           copyright &copy; <script>document.write(new Date().getFullYear());</script> Heath Babb | The Odin Project <a href="https://github.com/hbabb/odin-landing-page/blob/main/LICENSE.md" target="_blank">LICENSE</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
