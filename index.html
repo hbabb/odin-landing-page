@@ -13,7 +13,14 @@
 
     <header class="header">
         <div class="logo">
-            <img src="/assets/images/Heath Babb.svg" alt="signature logo">
+            <figure>
+                <a href="https://www.heath-babb.tech" target="_blank">
+                    <img src="/assets/images/Heath Babb.svg" alt="signature logo">
+                </a>
+                <figcaption>
+                    The Odin Project:<br>Landing Page CSS Project
+                </figcaption>
+            </figure>
         </div>
 
         <nav class="navigation">
@@ -36,7 +43,8 @@
          <section class="hero">
             <div class="hero-text">
                 <h1>
-                    The Odin Project: Landing Page CSS Project 
+                    The Odin Project: <br>
+                    Landing Page CSS Project 
                 </h1>
                 <p>
                     A web page created as part of The Odin Project's Foundations Course. This project demonstrates HTML and CSS skills, particularly focusing on layout and styling using Flexbox. Use the button below to sign up for The Odin Project!
@@ -57,7 +65,7 @@
          </section>
 
         <!-- Projects Section -->
-         <section id="projects">
+         <section id="projects" class="project-section">
             <h2>
                 Current Projects by Heath Babb 
             </h2>
@@ -94,19 +102,32 @@
                 </figure>
             </div>
             <div class="quotes">
-
+                <blockquote>
+                    <p>
+                        "Wise is he who knows he does not know;<br>
+                        the path to mastery is forged with<br>
+                        patience and persistence."
+                    </p>
+                    <cite>
+                        -- Odin, All-Father (Alföðr)<br>
+                        <span class="info">God of Wisdom</span>
+                        <span>from Norse Mythology</span>
+                    </cite>
+                    <span>
+                        Inspired by Norse mythology, from the teachings of the Hávamál in the Poetic Edda.
+                    </span>
+                </blockquote>
             </div>
          </section>
 
          <!-- Contact Section -->
           <section id="contact-form">
             <div>
-
-            </div>
-            <div>
                 <h2>
                     Contact Me
                 </h2>
+            </div>
+            <div>
                 <form action="https://api.web3forms.com/submit" method="POST">
 
                     <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
@@ -173,6 +194,22 @@
            copyright &copy; <script>document.write(new Date().getFullYear());</script> Heath Babb | The Odin Project <a href="https://github.com/hbabb/odin-landing-page/blob/main/LICENSE.md" target="_blank">LICENSE</a>
         </p>
     </footer>
+
+    <script>
+        // Get the form
+        const form = document.querySelector('#contact-form form');
+
+        // Reset form when page loads
+        window.onload = () => {
+            form.reset();
+        }
+
+        // Also reset when returning from submission
+        if (window.location.href.includes('success')) {
+            window.location.href = '#contact-form';
+            form.reset();
+        }
+    </script>
     
 </body>
 </html>
